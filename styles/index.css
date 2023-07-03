@@ -18,6 +18,10 @@ a:hover {
     opacity: 0.8;
 }
 
+a {
+    transition: opacity .2s;
+}
+
 svg {
     float: right;
 }
@@ -333,6 +337,14 @@ main section:not(:first-child) {
 }
 
 /* work cards */
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+.work-card {
+    transition: transform .2s;
+}
+
 .work-card-panel-website {
     opacity: 0.69;
 }
