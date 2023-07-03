@@ -249,42 +249,46 @@ main section:not(:first-child) {
 }
 
 /* greeting block */
-@media screen and (min-width: 1025px) {
-    .greeting {
-        max-width: 1006px;
-        margin-top: 102px;
-    }
+#greeting {
+    margin-top: 102px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 32px;
+}
 
-    .greeting-text {
-        font-size: 52px;
-        line-height: 66px;
-        letter-spacing: -2.08px;
+.greeting-text {
+    opacity: 0.8;
+    max-width: 420px;
+}
+@media screen and (min-width: 1025px) {
+    .greeting-title {
+        font-size: 110px;
+        line-height: 139px;
+        letter-spacing: -6.6px;
     }
 }
 
-@media screen and (min-width: 431px) and (max-width: 1024px) {
-    .greeting {
-        max-width: 684px;
-        margin-top: 102px;
+@media screen and (min-width: 706px) and (max-width: 1024px) {
+    .greeting-title {
+        font-size: 90px;
+        line-height: 114px;
+        letter-spacing: -5.4px;
     }
+}
 
-    .greeting-text {
-        font-size: 35px;
-        line-height: 44px;
-        letter-spacing: -1.4px;
+@media screen and (min-width: 431px) and (max-width: 705px) {
+    .greeting-title {
+        font-size: 90px;
+        line-height: 90px;
+        letter-spacing: -5.4px;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .greeting {
-        max-width: 319px;
-        margin-top: 102px;
-    }
-
-    .greeting-text {
-        font-size: 25px;
-        line-height: 32px;
-        letter-spacing: -1px;
+    .greeting-title {
+        font-size: 40px;
+        line-height: 51px;
+        letter-spacing: -2.4px;
     }
 }
 
