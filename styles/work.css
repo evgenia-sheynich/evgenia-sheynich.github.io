@@ -1,0 +1,436 @@
+/* font */
+@font-face {
+    font-family: 'Overpass';
+    src: url('/fonts/Overpass-Medium.woff2') format('woff2');
+}
+
+/* common */
+p {
+    margin: 0;
+}
+
+a {
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+svg {
+    float: right;
+}
+
+/* body size and root font */
+body {
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #1E1E1E;
+
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.144px;
+
+        max-width: 1276px;
+        padding: 0 82px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.128px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    body {
+        max-width: 892px;
+        padding: 0 66px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        min-width: 319px;
+        padding: 0 28px;
+    }
+}
+
+/* header and footer */
+.header-title {
+    margin-right: auto;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+@media screen and (min-width: 1025px) {
+    header,
+    footer {
+        height: 118px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 32px;
+    }
+
+    footer .navigation {
+        margin-right: auto;
+    }
+
+    .external-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+    header,
+    footer {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 32px;
+    }
+
+    footer .navigation {
+        margin-right: auto;
+    }
+
+    .external-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 650px) {
+    header,
+    footer {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
+
+    header li:not(:last-child) {
+        /*todo add burger menu*/
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        /*gap: 61px;*/
+        margin-bottom: 48px;
+    }
+
+    footer .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 61px;
+        row-gap: 24px;
+    }
+
+    .external-links ul {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 24px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header,
+    footer {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
+
+    header li:not(:last-child) {
+        /*todo add burger menu*/
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        /*gap: 61px;*/
+        margin-bottom: 48px;
+    }
+
+    footer .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 61px;
+        row-gap: 24px;
+    }
+
+    .external-links ul {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 24px;
+    }
+}
+
+/* title block */
+.title-text span {
+    opacity: 0.69;
+}
+
+.title-image {
+    margin-top: 48px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    .title-text {
+        font-size: 52px;
+        line-height: 66px;
+        letter-spacing: -2.08px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .title-text {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: -1.4px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .title-text {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -1px;
+    }
+}
+
+/* main block */
+.section-title {
+    opacity: 0.8;
+}
+
+main section {
+    margin-top: 200px;
+}
+
+.image-section {
+    margin-top: 48px;
+}
+
+@media screen and (min-width: 1025px) {
+    main section:not(:last-child) {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    main section:not(:last-child) {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        width: 319px;
+    }
+}
+
+/* text sections */
+@media screen and (min-width: 1025px) {
+    #company,
+    #task {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .text-section {
+        width: 628px;
+    }
+
+    .text-section p {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1.2px;
+        opacity: 0.8;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 38px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .text-section p {
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: -1.12px;
+        opacity: 0.8;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .text-section p:first-child {
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .text-section p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.8px;
+        opacity: 0.8;
+    }
+
+    .text-section p:first-child {
+        margin-top: 48px;
+    }
+
+    .text-section p:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+/* advertising */
+#advr .section-body {
+    display: flex;
+    justify-content: center;
+}
+
+#advr .section-body img:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+/* webiste */
+#website .section-body {
+    display: flex;
+    justify-content: center;
+}
+
+#website .section-body img {
+    border-radius: 20px;
+}
+
+/* adaptive */
+#adaptive .section-body {
+    display: flex;
+    justify-content: center;
+}
+
+.adaptive-header img {
+    width: 100%;
+}
+
+.adaptive-columns {
+    margin-top: 200px;
+}
+
+.adaptive-columns img {
+    border-radius: 20px;
+    width: 304px;
+}
+
+@media screen and (min-width: 1400px) {
+    .adaptive-columns {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1399px) {
+    .adaptive-columns {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .adaptive-columns {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* thanks-section */
+.thanks-section {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+@media screen and (min-width: 1025px) {
+    .thanks-section p {
+        font-size: 52px;
+        line-height: 66px;
+        letter-spacing: -2.08px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .thanks-section p {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: -1.4px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .thanks-section p {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -1px;
+    }
+}
