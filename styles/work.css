@@ -208,6 +208,7 @@ nav ul li {
 .title-image {
     margin-top: 48px;
     width: 100%;
+    border-radius: 40px;
 }
 
 @media screen and (min-width: 1025px) {
@@ -358,6 +359,7 @@ main section {
 
 #website .section-body img {
     border-radius: 20px;
+    box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.10);
 }
 
 /* adaptive */

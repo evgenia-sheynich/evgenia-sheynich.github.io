@@ -366,14 +366,17 @@ main section:not(:first-child) {
 
     .work-card:nth-child(1) .work-card-image {
         background-image: url("/images/work/green-chef/pc.png");
+        background-size: auto 465px;
     }
 
     .work-card:nth-child(2) .work-card-image {
         background-image: url("/images/work/indream-design/pc.png");
+        background-size: auto 465px;
     }
 
     .work-card:nth-child(3) .work-card-image {
         background-image: url("/images/work/rombo-guitar-picks/pc.png");
+        background-size: auto 465px;
     }
 
     .work-card-panel {
@@ -402,14 +405,17 @@ main section:not(:first-child) {
 
     .work-card:nth-child(1) .work-card-image {
         background-image: url("/images/work/green-chef/tablet.png");
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(2) .work-card-image {
         background-image: url("/images/work/indream-design/tablet.png");
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(3) .work-card-image {
         background-image: url("/images/work/rombo-guitar-picks/tablet.png");
+        background-size: auto 363px;
     }
 
     .work-card-panel {
@@ -444,16 +450,19 @@ main section:not(:first-child) {
     .work-card:nth-child(1) .work-card-image {
         background-image: url("/images/work/green-chef/tablet.png");
         background-position: center;
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(2) .work-card-image {
         background-image: url("/images/work/indream-design/tablet.png");
         background-position: right 0;
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(3) .work-card-image {
         background-image: url("/images/work/rombo-guitar-picks/tablet.png");
         background-position: center;
+        background-size: auto 363px;
     }
 
     .work-card-panel {
@@ -491,14 +500,17 @@ main section:not(:first-child) {
 
     .work-card:nth-child(1) .work-card-image {
         background-image: url("/images/work/green-chef/mobile.png");
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(2) .work-card-image {
         background-image: url("/images/work/indream-design/mobile.png");
+        background-size: auto 363px;
     }
 
     .work-card:nth-child(3) .work-card-image {
         background-image: url("/images/work/rombo-guitar-picks/mobile.png");
+        background-size: auto 363px;
     }
 
     .work-card-panel {
