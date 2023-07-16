@@ -285,6 +285,7 @@ main section {
 /* text sections */
 @media screen and (min-width: 1025px) {
     #company,
+    #problem,
     #task {
         display: flex;
         flex-flow: row;
@@ -434,5 +435,35 @@ main section {
         font-size: 25px;
         line-height: 32px;
         letter-spacing: -1px;
+    }
+}
+
+/* solution block */
+#solution .section-body {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1025px) {
+    #solution .section-body img {
+        width: calc(100% + 164px);
+        position: relative;
+        left: -82px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    #solution .section-body img {
+        width: calc(100% + 132px);
+        position: relative;
+        left: -66px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #solution .section-body img {
+        width: calc(100% + 84px);
+        position: relative;
+        left: -28px;
     }
 }
